@@ -32,7 +32,7 @@ function Navbar() {
       <div className="flex items-center">
         <Image
           src="./Logo.svg"
-          alt="main-logo"
+          alt="evoluter main-logo"
           className="lg:max-w-[100px] xl:max-w-[275px]"
           height={20}
           width={275}

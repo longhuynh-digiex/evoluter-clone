@@ -12,7 +12,7 @@ function CostAndQualitySection() {
           <Image
             src={"/cost-arrow.svg"}
             fill
-            alt="arrow"
+            alt="evoluter arrow"
           />
         </div>
       </div>
@@ -25,7 +25,7 @@ function CostAndQualitySection() {
           <div className="w-full flex-center">
             <Image
               src={"/Money-6.svg"}
-              alt="money"
+              alt="evoluter money"
               width={246}
               height={246}
             />
