@@ -33,6 +33,8 @@ export default function Home() {
       <span className="opacity-0">
         Hire Expert Software Developers Supported by AI
       </span>
+      <span className="opacity-0">Expert Software Developers Hiring</span>
+      <span className="opacity-0">Expert Software Developers Hiring</span>
     </div>
   );
 }
