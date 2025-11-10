@@ -68,7 +68,7 @@ function TwoBlocksSection({
           </div>
           <Image
             src={imgSrc}
-            alt=""
+            alt="image description"
             width={imgWidth}
             height={imgHeight}
              className="col-span-12 lg:col-span-6 w-full lg:w-auto"

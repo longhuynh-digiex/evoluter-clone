@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     title: "Evoluter",
     images: "/Logo.png",
     description: "Expert Software Developers Hiring",
-
   },
   twitter: {
     card: "summary_large_image",
     images: "/Logo.png",
   },
+  
 };
 
 export default function RootLayout({

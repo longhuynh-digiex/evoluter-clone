@@ -15,7 +15,10 @@ function Footer() {
                   <div className="font-bold text-lg mb-5">{data.section}</div>
                   <div className="flex flex-col gap-3">
                     {data.contents.map((content, i) => (
-                      <div key={i} className="font-semibold cursor-pointer">
+                      <div
+                        key={i}
+                        className="font-semibold cursor-pointer"
+                      >
                         {content}
                       </div>
                     ))}
@@ -26,33 +29,47 @@ function Footer() {
             <div className="w-full lg:w-[453px]">
               <div className="font-bold text-lg mb-5">Newsletter</div>
               <div className="flex gap-3 w-full">
-                <label htmlFor="footer-email" className="hidden">email</label>
-                <CustomInput id="footer-email" placeholder="Enter your email" />
+                <label
+                  htmlFor="footer-email"
+                  className="hidden"
+                >
+                  email
+                </label>
+                <CustomInput
+                  id="footer-email"
+                  placeholder="Enter your email"
+                />
                 <Button variant="secondary">Subcribe</Button>
               </div>
               <div className="flex justify-start items-center gap-6">
                 <div>Follow us</div>
-                <Image
-                  className="cursor-pointer"
-                  src={"/LinkedIN.svg"}
-                  alt="media"
-                  height={48}
-                  width={48}
-                />
-                <Image
-                  className="cursor-pointer"
-                  src={"/Twitter.svg"}
-                  alt="media"
-                  height={48}
-                  width={48}
-                />
-                <Image
-                  className="cursor-pointer"
-                  src={"/WhatsApp.svg"}
-                  alt="media"
-                  height={48}
-                  width={48}
-                />
+                <a href="https://www.linkedin.com/">
+                  <Image
+                    className="cursor-pointer"
+                    src={"/LinkedIN.svg"}
+                    alt="media"
+                    height={48}
+                    width={48}
+                  />
+                </a>
+                <a href="https://x.com/">
+                  <Image
+                    className="cursor-pointer"
+                    src={"/Twitter.svg"}
+                    alt="media"
+                    height={48}
+                    width={48}
+                  />
+                </a>
+                <a href="https://www.whatsapp.com/?lang=en">
+                  <Image
+                    className="cursor-pointer"
+                    src={"/WhatsApp.svg"}
+                    alt="media"
+                    height={48}
+                    width={48}
+                  />
+                </a>
               </div>
             </div>
           </div>
