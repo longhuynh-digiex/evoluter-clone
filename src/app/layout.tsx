@@ -9,14 +9,12 @@ const raleway = Raleway({
   variable: "--font-raleway",
   subsets: ["latin"],
 });
-const openSans = Open_Sans({
-  variable: "--open-sans",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "Evoluter",
-  description: "Hire Expert Software Developers Supported by AI",
+  title: "Evoluter | Expert Software Developers",
+  keywords: ["Hiring", "Developer Hiring", "AI Hiring", "Tech"],
+  description:
+    "At Evoluter, we offer the world's leading companies and startups access to top-tier software developers or fully managed teams, including designers and product managers",
   metadataBase: "https://evoluter-clone.vercel.app/",
   openGraph: {
     images: "/Logo.png",
