@@ -27,7 +27,7 @@ function Navbar() {
   return (
     <div
       ref={navRef}
-      className="flex justify-between bg-background px-15 py-5 font-bold fixed top-0 z-10 w-full duration-75"
+      className="flex container-lg justify-between bg-background px-15 py-5! font-bold top-0 z-5 w-full duration-75"
     >
       <div className="flex-center cursor-pointer">
         <Image

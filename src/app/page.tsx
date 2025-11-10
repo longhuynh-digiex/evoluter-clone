@@ -15,7 +15,6 @@ import TestimonialSection from "@/components/TestimonialSection";
 import TrustedSection from "@/components/TrustedSection";
 import WhyUseSection from "@/components/WhyUseSection";
 
-
 export default function Home() {
   return (
     <div className="w-full max-w-[1440px] font-raleway bg-primary">
@@ -26,13 +25,13 @@ export default function Home() {
       <WhyUseSection />
       <HiringStepsSection />
       <PricingSection />
-      <FormSection/>
+      <FormSection />
       <ClientSection />
-      <TalentSection/>
-      <CostAndQualitySection/>
-      <TestimonialSection/>
-      <FaqSection/>
-      <CtaSection/>
+      <TalentSection />
+      <CostAndQualitySection />
+      <TestimonialSection />
+      <FaqSection />
+      <CtaSection />
     </div>
   );
 }

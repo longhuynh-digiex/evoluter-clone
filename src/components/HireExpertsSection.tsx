@@ -2,16 +2,15 @@ import Image from "next/image";
 import ExpertCard from "./ExpertCard";
 import { ArrowRight } from "lucide-react";
 import { EXPERTS_CARD_ITEMS } from "@/constants/expert-card-items";
-import { COLORS } from "@/constants/colors";
 import Button from "./Button";
 
 function HireExpertsSection() {
   return (
     <div className="container-lg mt-36">
-      <div className="flex flex-col gap-15 h-full bg-secondary rounded-4xl p-[90px]">
+      <div className="flex flex-col gap-15 h-full bg-secondary rounded-4xl p-4 lg:p-[90px]">
         <div className="flex justify-between">
-          <div className="flex flex-col gap-6 min-w-[788px]">
-            <h2 className="font-bold text-5xl text-primary">
+          <div className="flex flex-col gap-6 max-w-[788px]">
+            <h2 className="font-bold text-3xl lg:text-5xl text-primary">
               Better quality, better pricing.
               <br /> Scale with Evoluter
             </h2>
