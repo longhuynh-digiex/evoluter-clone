@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+html {
+ 
+}
 :root {
   --background: #141414;
   --foreground: #FFFFFF;
@@ -77,6 +79,21 @@ body {
   background: var(--foreground);
 }
 
+@media screen and (width <=1024px) {
+  .container-sm {
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .container-lg {
+    padding: 0 16px;
+    width: 100%;
+
+  }
+  .paragraph {
+    width: 100% !important;
+  }
+}
 
 @keyframes scaleUp {
   0% {

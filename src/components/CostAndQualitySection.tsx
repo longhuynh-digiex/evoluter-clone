@@ -4,11 +4,11 @@ import React from "react";
 function CostAndQualitySection() {
   return (
     <div className="container-sm mt-[200px]">
-      <div className="flex justify-between">
-        <h2 className="font-bold text-5xl leading-[60px]">
+      <div className="flex flex-col lg:flex-row justify-between">
+        <h2 className="font-bold text-5xl leading-[60px] text-center lg:text-start">
           We solved the biggest <br /> problems in tech & product
         </h2>
-        <div className="relative grow">
+        <div className="relative h-20 lg:h-auto grow">
           <Image
             src={"/cost-arrow.svg"}
             fill
@@ -17,7 +17,7 @@ function CostAndQualitySection() {
         </div>
       </div>
 
-      <div className="flex gap-[30px] mt-15">
+      <div className="flex flex-wrap lg:flex-nowrap gap-[30px] mt-15">
         <div style={{
             clipPath: "polygon(15% 0, 70% 0%, 100% 0, 100% 75%, 100% 100%, 30% 100%, 0 100%, 0 15%)"
         }}

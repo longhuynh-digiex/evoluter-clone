@@ -20,7 +20,7 @@ function PricingSection() {
             <span className="text-background-gray">Manual</span>
           </div>
         </div>
-        <div className="flex justify-between items-center *:basis-[360px] mt-15">
+        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row justify-between items-center *:basis-[360px] mt-15">
           {PRICING_PLAN.map((plan, index) => (
             <PricingPlanCard
               isMostPopular={plan.isMostPopular}

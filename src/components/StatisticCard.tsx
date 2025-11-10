@@ -21,7 +21,7 @@ function StatisticCard({
   return (
     <div
       style={{ backgroundColor: bgColor, color: textColor }}
-      className="rounded-[20px] p-8 clip-bg"
+      className="w-full rounded-[20px] p-8 clip-bg"
     >
       <div className="flex flex-col items-start">
         <div className="flex-center gap-3">

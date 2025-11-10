@@ -22,8 +22,8 @@ function FormSection() {
       <div className="border-2 border-background-gray rounded-4xl w-full p-[90px]">
         <h1 className="font-bold text-4xl">Let us know what you need!</h1>
         <div className="mt-15">
-          <form className="w-full flex justify-between items-start">
-            <div className="flex flex-col gap-8 w-[458px]">
+          <form className="w-full flex flex-col lg:flex-row justify-between items-start">
+            <div className="flex flex-col gap-8 w-full lg:w-[458px]">
               <div className="">
                 <FormLabel
                   className="mb-4"
@@ -44,7 +44,7 @@ function FormSection() {
                 <Slider />
               </div>
             </div>
-            <div className="flex flex-col gap-8 w-[458px]">
+            <div className="flex flex-col gap-8 w-full lg:w-[458px]">
               <div>
                 <div className="mb-3">Name</div>
                 <CustomInput placeholder="Enter your name" />

@@ -26,8 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${raleway.className} antialiased`}>
-        <Navbar />
-        <div className="w-full flex-center">{children}</div>
+        {/* <Navbar /> */}
+
+        <div className="flex">{children}</div>
+
         <Footer />
       </body>
     </html>

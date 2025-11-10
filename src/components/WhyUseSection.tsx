@@ -14,7 +14,7 @@ function WhyUseSection() {
           <Image src={'./boom.svg'} alt="" width={40} height={40}/>
         </div>
       </div>
-      <div className="flex justify-between gap-[30px] mt-15 *:basis-[380px]">
+      <div className="flex flex-col lg:flex-row justify-between gap-[30px] mt-15  lg:flex-nowrap">
         {WHY_US_ITEMS.map((items,index) => (
           <StatisticCard
             key={index}

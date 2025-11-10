@@ -31,7 +31,7 @@ function TwoBlocksSection({
   return (
     <div
       className={twMerge(
-        "flex flex-wrap grow items-center justify-between h-auto ",
+        "flex flex-col gap-8 lg:gap-0 lg:flex-row flex-wrap lg:flex-nowrap items-center justify-between h-auto ",
         className
       )}
     >
@@ -42,9 +42,10 @@ function TwoBlocksSection({
             alt=""
             width={imgWidth}
             height={imgHeight}
+            className="w-full lg:w-auto"
           />
 
-          <div style={{width: paragraphWidth}} className="flex flex-col gap-6 items-start">
+          <div style={{width: paragraphWidth}} className="paragraph flex flex-col gap-6 items-start">
             <Tags
               text={tagText}
               className={tagClass}
@@ -56,7 +57,7 @@ function TwoBlocksSection({
         </>
       ) : (
         <>
-          <div style={{width: paragraphWidth}} className="flex flex-col gap-6 items-start">
+          <div style={{width: paragraphWidth}} className="paragraph flex flex-col gap-6 items-start">
             <Tags
               text={tagText}
               className={tagClass}
@@ -70,6 +71,7 @@ function TwoBlocksSection({
             alt=""
             width={imgWidth}
             height={imgHeight}
+             className="w-full lg:w-auto"
           />
         </>
       )}

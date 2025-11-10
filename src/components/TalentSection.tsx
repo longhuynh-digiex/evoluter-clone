@@ -32,7 +32,7 @@ function TalentSection() {
       <div className="mt-15">
         <PositionsTabs />
       </div>
-      <div className="flex *:grow gap-[30px] mt-15">
+      <div className="flex flex-wrap lg:flex-nowrap *:grow gap-[30px] mt-15">
         {TALENTS.map((talent, index) => (
           <TalentCard
             key={index}

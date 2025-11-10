@@ -8,14 +8,14 @@ type Props = {};
 function FaqSection({}: Props) {
   return (
     <div className="container-sm mt-[200px]">
-      <div className="w-full flex gap-[30px]">
-        <div className="text-5xl min-w-[360px] leading-[60px] font-bold">
+      <div className="w-full flex flex-wrap lg:flex-nowrap gap-[30px]">
+        <div className="text-center lg:text-start text-5xl w-full lg:min-w-[360px] leading-[60px] font-bold">
           <h2>
-            You have <br /> questions?
+            You have  questions?
           </h2>
           <h2 className="mt-13">
             We have the
-            <br /> answers!
+             answers!
           </h2>
           <div className="flex-center w-full mt-13">
             <Image

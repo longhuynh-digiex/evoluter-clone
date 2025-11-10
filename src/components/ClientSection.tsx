@@ -3,7 +3,7 @@ import TwoBlocksSection from "./TwoBlocksSection";
 
 function ClientSection() {
   return (
-    <div className="container-sm mt-[200px] flex flex-col gap-[160px]">
+    <div className="container-sm mt-[200px] flex flex-col gap-40">
       <TwoBlocksSection
         title="Your new team located together in our office or fully remote"
         description="Embrace flexibility with your new tech team. Choose between our collaborative office environment or fully remote setup. Whether it's a larger dedicated team working together in our office to foster innovation or harnessing the talent of remote professionals, we deliver tailored solutions to drive your success."

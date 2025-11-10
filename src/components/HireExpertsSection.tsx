@@ -42,7 +42,7 @@ function HireExpertsSection() {
           </div>
         </div>
 
-        <div className="flex justify-between items-center gap-[30px] min-h-[456px]">
+        <div className="flex-wrap lg:flex-nowrap flex justify-between items-center gap-[30px] min-h-[456px]">
           {EXPERTS_CARD_ITEMS.map((expert, index) => (
             <ExpertCard
               key={index}
@@ -61,7 +61,7 @@ function HireExpertsSection() {
           ))}
         </div>
 
-        <div className="flex justify-between items-center border border-primary h-52 w-full rounded-[20px] p-10">
+        <div className="flex justify-between items-center flex-wrap lg:flex-nowrap border border-primary w-full rounded-[20px] p-10">
           <div className="flex flex-col items-start gap-4 text-primary max-w-[807px]">
             <h2 className="font-bold text-[28px]">
               Or you can hire entire team
@@ -73,7 +73,7 @@ function HireExpertsSection() {
               technical requirements.
             </div>
           </div>
-          <Button className="h-12">Hire entire team</Button>
+          <Button className="w-full lg:w-auto">Hire entire team</Button>
         </div>
       </div>
     </div>

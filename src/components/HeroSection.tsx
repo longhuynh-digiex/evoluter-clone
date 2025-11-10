@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <section className="container-sm flex items-center w-full h-auto px-[150px] *:basis-1/2 mt-[116px]">
+    <section className="container-sm flex items-center justify-center h-auto lg:*:basis-1/2 mt-[116px] flex-wrap lg:flex-nowrap">
       <div className="flex flex-col items-start">
         <h2 className="text-6xl font-bold leading-[72px]">
           Hire Expert Software <br /> Developers <br />
@@ -20,12 +20,12 @@ function HeroSection() {
         <div className="flex w-full justify-between mt-8">
           <Button
             variant="secondary"
-            className="gap-2"
+            className="gap-2 w-full"
           >
             <div>Get Started</div>
             <ArrowRight />
           </Button>
-          <div className="relative w-[119px] rotate-2 overflow-hidden">
+          <div className="hidden lg:block relative w-[119px] rotate-2 overflow-hidden">
             <Image
               src="./hand-drawings.svg"
               alt=""

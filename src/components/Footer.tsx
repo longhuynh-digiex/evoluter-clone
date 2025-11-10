@@ -7,9 +7,9 @@ function Footer() {
   return (
     <>
       <div className=" flex justify-center mt-[140px]">
-        <div className="container-lg w-full xl:w-[1440px]">
-          <div className=" flex justify-between">
-            <div className="flex gap-15">
+        <div className="container-lg w-full">
+          <div className=" flex justify-between flex-wrap">
+            <div className="flex flex-wrap gap-15">
               {FOOTER_DATA.map((data, index) => (
                 <div key={index}>
                   <h5 className="font-bold text-lg mb-5">{data.section}</h5>
@@ -23,7 +23,7 @@ function Footer() {
                 </div>
               ))}
             </div>
-            <div className="w-[453px]">
+            <div className="w-full lg:w-[453px]">
               <h5 className="font-bold text-lg mb-5">Newsletter</h5>
               <div className="flex gap-3 w-full">
                 <CustomInput placeholder="Enter your email" />

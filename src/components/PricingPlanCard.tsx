@@ -24,7 +24,7 @@ function PricingPlanCard({
   return (
     <div
       style={{ backgroundColor: bgColor, color: textColor }}
-      className="relative p-10 rounded-[20px] "
+      className="w-full relative p-10 rounded-[20px] "
     >
       {isMostPopular && (
         <div className="absolute flex flex-col justify-end items-end -top-12 right-3 rotate-7">
