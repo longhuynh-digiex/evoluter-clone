@@ -2,25 +2,17 @@ import ClientSection from "@/components/ClientSection";
 import CostAndQualitySection from "@/components/CostAndQualitySection";
 import CtaSection from "@/components/CtaSection";
 import FaqSection from "@/components/FaqSection";
-import Footer from "@/components/Footer";
 import FormSection from "@/components/FormSection";
 import HeroSection from "@/components/HeroSection";
 import HireExpertsSection from "@/components/HireExpertsSection";
 import HiringStepsSection from "@/components/HiringStepsSection";
-
 import PlatformSection from "@/components/PlatformSection";
 import PricingSection from "@/components/PricingSection";
 import TalentSection from "@/components/TalentSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import TrustedSection from "@/components/TrustedSection";
 import WhyUseSection from "@/components/WhyUseSection";
-import { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Evoluter",
-  
 
-  
-}
 export default function Home() {
 
   return (

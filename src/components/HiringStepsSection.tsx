@@ -6,9 +6,9 @@ import Image from "next/image";
 function HiringStepsSection() {
   return (
     <div className="container-sm mt-[200px] relative">
-      <h1 className="font-bold text-5xl leading-15 text-center">
+      <div className="font-bold text-5xl leading-15 text-center">
         Hiring made easy
-      </h1>
+      </div>
 
       <div className="flex flex-col gap-15 mt-15">
         {HIRING_STEPS.map((step, index) => (
