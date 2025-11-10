@@ -1,9 +1,7 @@
 import Image from "next/image";
-import React from "react";
 
-type Props = {};
 
-function MobileNav({}: Props) {
+function MobileNav() {
   return (
     <div className="container-sm py-4! w-full">
       <div className="flex justify-between">

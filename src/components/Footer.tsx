@@ -55,7 +55,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex gap-4 mt-15 mb-[100px] text-gray-200">
+          <div className="flex flex-wrap gap-1 lg:gap-4 mt-15 mb-[100px] text-gray-200">
             <span>© 2023 Evoluter. All rights reserved</span>
             <span>・</span>
             <span>Privacy Policy</span>

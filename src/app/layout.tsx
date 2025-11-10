@@ -26,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${raleway.className} antialiased min-w-screen`}>
+      <body
+        className={`${raleway.className} antialiased w-full overflow-x-hidden`}
+      >
         <div className="hidden lg:block">
           <Navbar />
         </div>
@@ -34,7 +36,7 @@ export default function RootLayout({
           <MobileNav />
         </div>
 
-        <div className="w-screen flex-center">{children}</div>
+        <div className="flex-center">{children}</div>
 
         <Footer />
       </body>

@@ -6,7 +6,7 @@ import Image from "next/image";
 function PricingSection() {
   return (
     <div className="container-lg relative w-full mt-[200px]">
-      <div className=" bg-secondary p-22.5 rounded-4xl ">
+      <div className=" bg-secondary p-4 lg:p-22.5 rounded-4xl ">
         <div className="text-center text-primary">
           <div className="font-bold text-5xl leading-15">
             Or hire an entire team!{" "}
