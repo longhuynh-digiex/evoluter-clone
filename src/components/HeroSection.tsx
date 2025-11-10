@@ -20,7 +20,7 @@ function HeroSection() {
         <div className="flex w-full justify-between mt-8">
           <Button
             variant="secondary"
-            className="gap-2 w-full"
+            className="pl-6 gap-2 w-full lg:w-auto h-14 "
           >
             <div>Get Started</div>
             <ArrowRight />
