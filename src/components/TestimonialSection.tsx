@@ -7,7 +7,7 @@ function TestimonialSection() {
     <div className="container-sm mt-[200px]">
       <div className="flex justify-between items-center">
         <div className="text-start">
-          <div className="flex items-center font-bold text-5xl">
+          <div className="flex flex-wrap items-center font-bold text-5xl">
             <span>People</span>
             <Image
               src="/Heart.svg"

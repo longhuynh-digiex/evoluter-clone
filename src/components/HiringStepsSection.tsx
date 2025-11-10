@@ -30,21 +30,21 @@ function HiringStepsSection() {
         ))}
       </div>
       <Image
-        className="absolute top-0 lg:left-63 w-auto h-[2291.5px]"
+        className="hidden lg:block absolute top-0 lg:left-63"
         src="/vector.png"
         width={936.9439697265625}
         height={2291.5}
         alt="star-line"
       />
       <Image
-        className="absolute -top-3.5 left-104"
+        className="hidden lg:block absolute -top-3.5 left-104"
         src="/top-star.svg"
         width={24}
         height={24}
         alt="star-line"
       />
       <Image
-        className="absolute bottom-[-111px] right-60"
+        className="hidden lg:block absolute bottom-[-111px] right-60"
         src="/star-bottom.svg"
         width={30}
         height={30}
