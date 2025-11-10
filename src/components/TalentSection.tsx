@@ -7,12 +7,12 @@ import { TALENTS } from "@/constants/talents";
 const PositionsTabs = () => {
   const [selected, setSelected] = useState(POSITIONS[0]);
   return (
-    <div className="flex *:grow rounded-lg">
+    <div className="flex overflow-hidden *:grow rounded-lg">
       {POSITIONS.map((position, key) => (
         <div
           key={key}
           onClick={() => setSelected(position)}
-          className={`p-1.5 text-center rounded-lg cursor-pointer font-semibold duration-300 ${
+          className={`p-1.5 text-center rounded-lg cursor-pointer shrink-0 font-semibold duration-300 ${
             selected === position && "bg-foreground text-primary"
           }`}
         >

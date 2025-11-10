@@ -7,7 +7,7 @@ function TestimonialSection() {
     <div className="container-sm mt-[200px]">
       <div className="flex justify-between items-center">
         <div className="text-start">
-          <div className="flex items-center gap-2 font-bold text-5xl">
+          <div className="flex items-center font-bold text-5xl">
             <span>People</span>
             <Image
               src="/Heart.svg"
@@ -17,7 +17,7 @@ function TestimonialSection() {
             />
             <span> Evoluter </span>
           </div>
-          <p className="mt-6 w-[514px] text-lg">
+          <p className="mt-6 lg:w-[514px] text-lg">
             We are proud of the work we deliver, and our clients love it to.
             Here is a few Evoluter.com reviews we have received.
           </p>

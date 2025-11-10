@@ -30,7 +30,7 @@ function HiringStepsSection() {
         ))}
       </div>
       <Image
-        className="absolute top-0 left-63"
+        className="absolute top-0 lg:left-63 w-auto h-[2291.5px]"
         src="/vector.png"
         width={936.9439697265625}
         height={2291.5}

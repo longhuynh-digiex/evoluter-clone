@@ -42,7 +42,7 @@ function Navbar() {
       <div className="flex-center *:shrink-0 gap-6">
         {NAVBAR_ITEMS.map((item, index) => (
           <div
-            className="flex-center gap-1 cursor-pointer"
+            className="flex-center gap-1 cursor-pointer duration-300 py-2 px-4 rounded-md hover:bg-secondary hover:text-primary"
             key={index}
           >
             <span className="">{item.name}</span>

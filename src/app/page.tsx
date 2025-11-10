@@ -15,7 +15,7 @@ import WhyUseSection from "@/components/WhyUseSection";
 
 export default function Home() {
   return (
-    <div className="w-full max-w-[1440px] font-raleway bg-primary">
+    <div className="w-full lg:max-w-[1440px] font-raleway bg-primary">
       <HeroSection />
       <TrustedSection />
       <HireExpertsSection />
