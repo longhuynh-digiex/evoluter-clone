@@ -11,10 +11,10 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Evoluter | Expert Software Developers Hiring",
-  keywords: ["Hiring", "Developer Hiring", "AI Hiring", "Tech"],
+  title: "Evoluter Clone | Expert Software Developers Hiring",
+  keywords: ["Hiring", "Developer Hiring", "AI Hiring", "Tech", "Evoluter", "Evoluter Clone", "evoluter-clone"],
   description:
-    "At Evoluter, we offer the world's leading companies and startups access to top-tier software developers",
+    "At Evoluter Clone, we offer the world's leading companies and startups access to top-tier software developers",
   metadataBase: "https://evoluter-clone.vercel.app/",
   openGraph: {
     title: "Evoluter",
@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: "/Logo.png",
   },
+  
   
 };
 
