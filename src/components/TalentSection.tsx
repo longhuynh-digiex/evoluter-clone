@@ -25,14 +25,14 @@ const PositionsTabs = () => {
 function TalentSection() {
   return (
     <div className="container-sm mt-[200px]">
-      <h1 className="text-5xl leading-15 font-bold text-center">
+      <div className="text-5xl leading-15 font-bold text-center">
         Meet some of our talent <br />
         at Evoluter
-      </h1>
+      </div>
       <div className="mt-15">
         <PositionsTabs />
       </div>
-      <div className="flex flex-wrap lg:flex-nowrap *:grow gap-[30px] mt-15">
+      <div className="flex flex-wrap lg:flex-nowrap  *:grow gap-[30px] mt-15">
         {TALENTS.map((talent, index) => (
           <TalentCard
             key={index}

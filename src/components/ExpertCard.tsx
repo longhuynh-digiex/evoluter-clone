@@ -35,6 +35,7 @@ function ExpertCard({
         alt="expert card"
         width={162}
         height={180}
+        className="w-auto"
       />
       <div
         className="flex flex-col justify-start items-center text-center h-auto min-h-36"
