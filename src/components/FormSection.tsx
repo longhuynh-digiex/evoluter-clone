@@ -3,58 +3,67 @@ import Slider from "./Slider";
 import { twMerge } from "tailwind-merge";
 import CustomInput from "./CustomInput";
 import Button from "./Button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Plus } from "lucide-react";
 import Image from "next/image";
 import PhoneNumberInput from "./PhoneNumberInput";
 const FormLabel = ({
   label,
   className,
+  htmlFor
 }: {
   label: string;
   className?: string;
+  htmlFor: string
 }) => (
-  <div className={twMerge("font-bold text-[28px]", className)}>{label}</div>
+  <label htmlFor={htmlFor} className={twMerge("font-bold text-[28px]", className)}>{label}</label>
 );
 
 function FormSection() {
   return (
     <div className="container-lg w-full mt-20">
       <div className="border-2 border-background-gray rounded-4xl w-full p-[90px]">
-        <h1 className="font-bold text-4xl">Let us know what you need!</h1>
+        <div className="font-bold text-4xl">Let us know what you need!</div>
         <div className="mt-15">
-          <form className="w-full flex flex-col lg:flex-row justify-between items-start">
-            <div className="flex flex-col gap-8 w-full lg:w-[458px]">
+          <form className="grid grid-cols-12 gap-[30px]">
+            <div className="col-span-5 flex flex-col gap-8">
               <div className="">
                 <FormLabel
+                  htmlFor="size"
                   className="mb-4"
                   label="Team size"
                 />
-                <Slider />
+                <Slider id="size"/>
               </div>
               <div className="mb-4">
-                <FormLabel label="Your budget" />
-                <Slider />
+                <FormLabel htmlFor="budget" label="Your budget" />
+                <Slider id="budget"/>
               </div>
               <div className="mb-4">
-                <FormLabel label="Required Skills" />
-                <Slider />
+                <FormLabel htmlFor="skills" label="Required Skills" />
+                <div className="flex items-center gap-1">
+                  <Plus  size={20}/>
+                  <div>Add Skills</div>
+                </div>
               </div>
               <div className="mb-4">
-                <FormLabel label="Required Roles" />
-                <Slider />
+                <FormLabel htmlFor="roles" label="Required Roles" />
+                <div className="flex items-center gap-1">
+                  <Plus  size={20}/>
+                  <div>Add Roles</div>
+                </div>
               </div>
             </div>
-            <div className="flex flex-col gap-8 w-full lg:w-[458px]">
+            <div className="col-start-7 col-span-5 flex flex-col gap-8">
               <div>
-                <div className="mb-3">Name</div>
-                <CustomInput placeholder="Enter your name" />
+                <label htmlFor="name" className="mb-3 block">Name</label>
+                <CustomInput id="name"  placeholder="Enter your name" />
               </div>
               <div>
-                <div className="mb-1.5">Email</div>
-                <CustomInput placeholder="Enter your email" />
+                <label htmlFor="email" className="mb-3 block">Email</label>
+                <CustomInput id="email" placeholder="Enter your email" />
               </div>
               <div>
-                <div className="mb-1.5">Phone number</div>
+                <div className="mb-3">Phone number</div>
                 <PhoneNumberInput />
               </div>
               <Button

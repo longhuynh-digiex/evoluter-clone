@@ -6,12 +6,15 @@ type TCustomSlider = {
   max?: number;
   step?: number;
   initialValue?: number;
+  id: string
+
 };
 const CustomSlider = ({
   min = 0,
   max = 1000,
   step = 0,
   initialValue,
+  id
 }: TCustomSlider) => {
   const [value, setValue] = useState(initialValue || min);
   const handleSliderChange = (event: any) => {
@@ -26,6 +29,7 @@ const CustomSlider = ({
         min={min}
         max={max}
         step={step}
+        id={id}
         value={value}
         onChange={handleSliderChange}
         className="custom-slider w-full appearance-none rounded-2xl h-1 bg-background-gray "
@@ -35,7 +39,7 @@ const CustomSlider = ({
           left: percent + '%',
           transform: `translateX(${-percent}%)`,
         }}
-        className={`absolute top-0.5 text-primary text-center font-semibold font-mono text-sm w-13 cursor-pointer`}
+        className={`absolute top-1 text-primary text-center font-semibold font-mono text-sm w-13 cursor-pointer`}
       >
         {value}
       </div>

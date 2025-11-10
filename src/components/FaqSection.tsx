@@ -20,7 +20,7 @@ function FaqSection({}: Props) {
           <div className="flex-center w-full mt-13">
             <Image
               src={"/faq-arrow.svg"}
-              alt=""
+              alt="faq arrow"
               width={128}
               height={128}
             />

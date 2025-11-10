@@ -14,8 +14,15 @@ import TalentSection from "@/components/TalentSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import TrustedSection from "@/components/TrustedSection";
 import WhyUseSection from "@/components/WhyUseSection";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Evoluter",
+  
 
+  
+}
 export default function Home() {
+
   return (
     <div className="w-full max-w-[1440px] font-raleway bg-primary">
       <HeroSection />

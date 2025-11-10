@@ -12,10 +12,10 @@ function Footer() {
             <div className="flex flex-wrap gap-15">
               {FOOTER_DATA.map((data, index) => (
                 <div key={index}>
-                  <h5 className="font-bold text-lg mb-5">{data.section}</h5>
+                  <div className="font-bold text-lg mb-5">{data.section}</div>
                   <div className="flex flex-col gap-3">
-                    {data.contents.map((content) => (
-                      <div className="font-semibold cursor-pointer">
+                    {data.contents.map((content, i) => (
+                      <div key={i} className="font-semibold cursor-pointer">
                         {content}
                       </div>
                     ))}
@@ -24,9 +24,10 @@ function Footer() {
               ))}
             </div>
             <div className="w-full lg:w-[453px]">
-              <h5 className="font-bold text-lg mb-5">Newsletter</h5>
+              <div className="font-bold text-lg mb-5">Newsletter</div>
               <div className="flex gap-3 w-full">
-                <CustomInput placeholder="Enter your email" />
+                <label htmlFor="footer-email" className="hidden">email</label>
+                <CustomInput id="footer-email" placeholder="Enter your email" />
                 <Button variant="secondary">Subcribe</Button>
               </div>
               <div className="flex justify-start items-center gap-6">

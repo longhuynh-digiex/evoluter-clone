@@ -7,9 +7,9 @@ import Button from "./Button";
 function HireExpertsSection() {
   return (
     <div className="container-lg mt-36">
-      <div className="flex flex-col gap-15 h-full bg-secondary rounded-4xl p-4 lg:p-[90px]">
-        <div className="flex justify-between">
-          <div className="flex flex-col gap-6 max-w-[788px]">
+      <div className="grid grid-cols-12 gap-15 h-full bg-secondary rounded-4xl p-4 lg:p-[90px]">
+        <div className="col-span-12 flex justify-between">
+          <div className="grid-cols-12 gap-6 max-w-[788px]">
             <h2 className="font-bold text-3xl lg:text-5xl text-primary">
               Better quality, better pricing.
               <br /> Scale with Evoluter
@@ -35,15 +35,16 @@ function HireExpertsSection() {
                 src="./arrow-down.svg"
                 fill
                 objectFit="contain"
-                alt=""
+                alt="arrow down"
               />
             </div>
           </div>
         </div>
 
-        <div className="flex-wrap lg:flex-nowrap flex justify-between items-center gap-[30px] min-h-[456px]">
+        <div className="grid grid-cols-12 gap-[30px] col-span-12">
           {EXPERTS_CARD_ITEMS.map((expert, index) => (
             <ExpertCard
+              className="col-span-12 lg:col-span-4"
               key={index}
               imgSrc={expert.imgSrc}
               bgColor={expert.bgColor}
@@ -60,7 +61,7 @@ function HireExpertsSection() {
           ))}
         </div>
 
-        <div className="flex justify-between items-center flex-wrap lg:flex-nowrap border border-primary w-full rounded-[20px] p-10">
+        <div className="col-span-12 flex justify-between items-center flex-wrap lg:flex-nowrap border border-primary w-full rounded-[20px] p-10">
           <div className="flex flex-col items-start gap-4 text-primary max-w-[807px]">
             <h2 className="font-bold text-[28px]">
               Or you can hire entire team

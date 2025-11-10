@@ -7,11 +7,11 @@ function WhyUseSection() {
   return (
     <div className="container-sm mt-[200px]">
       <div className="w-full text-center relative">
-        <h1 className="font-bold text-6xl leading-16">
+        <div className="font-bold text-6xl leading-16">
           Why are companies and founders <br /> using Evoluter?{" "}
-        </h1>
+        </div>
         <div className="absolute right-10 -top-3 animate-ping">
-          <Image src={'./boom.svg'} alt="" width={40} height={40}/>
+          <Image src={'./boom.svg'} alt="boom" width={40} height={40}/>
         </div>
       </div>
       <div className="flex flex-col lg:flex-row justify-between gap-[30px] mt-15  lg:flex-nowrap">

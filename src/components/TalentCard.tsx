@@ -28,14 +28,14 @@ function TalentCard({
       <div className="relative w-full h-[274px] overflow-hidden rounded-xl">
         <Image
           src={imgSrc || "/talent-1.svg"}
-          alt={name || "Talent"}
+          alt={"Talent"}
           fill
           className="object-cover"
         />
       </div>
 
       <div>
-        <h3 className="font-bold text-xl">{name}</h3>
+        <div className="font-bold text-xl">{name}</div>
         <p className="text-orange font-medium">{position}</p>
       </div>
 
@@ -47,15 +47,15 @@ function TalentCard({
           </div>
           <ul className="flex w-full overflow-hidden">
             {skills.map((s, i) => (
-              <div key={i} className="flex mr-1.5">
-                <li
+              <li key={i} className="flex mr-1.5">
+                <div
                   
                   className=""
                 >
                   {s}
-                </li>
+                </div>
                 {i !== skills.length - 1 && <span>・</span>}
-              </div>
+              </li>
             ))}
           </ul>
         </div>
@@ -83,7 +83,7 @@ function TalentCard({
           <div>
             <Image
               src={logo}
-              alt=""
+              alt="logo"
               height={16}
               width={130}
             />

@@ -25,7 +25,7 @@ function CostAndQualitySection() {
           <div className="w-full flex-center">
             <Image
               src={"/Money-6.svg"}
-              alt=""
+              alt="money"
               width={246}
               height={246}
             />
@@ -58,7 +58,7 @@ function CostAndQualitySection() {
           <div className="w-full flex-center">
             <Image
               src={"/Rocket-6.svg"}
-              alt=""
+              alt="rocket"
               width={298}
               height={298}
             />

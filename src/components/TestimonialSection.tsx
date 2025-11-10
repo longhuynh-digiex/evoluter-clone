@@ -11,7 +11,7 @@ function TestimonialSection() {
             <span>People</span>
             <Image
               src="/Heart.svg"
-              alt=""
+              alt="heart"
               width={54}
               height={60}
             />
@@ -49,7 +49,7 @@ function TestimonialSection() {
         <div className="relative">
           <Image
             src={"/tes-1.svg"}
-            alt=""
+            alt="testimonial 1"
             fill
             className="drag-none"
           />
@@ -57,7 +57,7 @@ function TestimonialSection() {
         <div className="relative ">
           <Image
             src={"/tes-2.svg"}
-            alt=""
+            alt="testimonial 2"
             fill
             className="drag-none"
           />

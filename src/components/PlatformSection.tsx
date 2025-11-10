@@ -7,6 +7,8 @@ function PlatformSection() {
         isImageFirst
         imgSrc="./platform.svg"
         tagText="Platform"
+        tagClass="text-primary font-bold"
+
         title="Dynamic profiles of deeply vetted experts"
         description={`Experience a software-centric approach to solve any tech or.\nproduct challenge. Utilize Evoluters cutting-edge platform to\n
             efficiently recruit, onboard, and effectively manage your\n"}
@@ -22,6 +24,7 @@ function PlatformSection() {
             professionals from our vast talent pool, specifically tailored to
             meet your unique resource requirements."
         tagText="Platform"
+        tagClass="text-primary font-bold"
         title="Co-piloted by Evoluter AI suite"
       />
     </div>

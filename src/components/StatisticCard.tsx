@@ -36,7 +36,7 @@ function StatisticCard({
           <div className="font-bold">{iconName}</div>
         </div>
         <div>
-          <h1 className="font-bold text-4xl mt-6">{title}</h1>
+          <div className="font-bold text-4xl mt-6">{title}</div>
           <div className="mt-3 ">{description}</div>
         </div>
       </div>

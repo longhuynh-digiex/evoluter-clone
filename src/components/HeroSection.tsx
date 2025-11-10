@@ -6,12 +6,12 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <section className="container-sm flex items-center justify-center h-auto lg:*:basis-1/2 mt-[116px] flex-wrap lg:flex-nowrap">
-      <div className="flex flex-col items-start">
-        <h2 className="text-6xl font-bold leading-[72px]">
+    <section className="container-sm grid grid-cols-12 mt-[116px]">
+      <div className="col-span-12 lg:col-span-7 flex flex-col items-start">
+        <h1 className="text-6xl font-bold leading-[72px]">
           Hire Expert Software <br /> Developers <br />
           Supported by AI
-        </h2>
+        </h1>
         <div className="mt-6">
           At Evoluter, we offer the world's leading companies and startups
           access to top-tier software developers or fully managed teams,
@@ -28,14 +28,14 @@ function HeroSection() {
           <div className="hidden lg:block relative w-[119px] rotate-2 overflow-hidden">
             <Image
               src="./hand-drawings.svg"
-              alt=""
+              alt="hand drawing"
               width={119}
               height={119}
             />
           </div>
         </div>
       </div>
-      <div className="flex-center">
+      <div className="col-span-12 lg:col-span-5 flex-center">
         <Image
           src="./hero-section-img.svg"
           alt="hero-section-image"

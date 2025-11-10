@@ -31,7 +31,7 @@ function TwoBlocksSection({
   return (
     <div
       className={twMerge(
-        "flex flex-col gap-8 lg:gap-0 lg:flex-row flex-wrap lg:flex-nowrap items-center justify-between h-auto ",
+        "grid grid-cols-12 h-auto ",
         className
       )}
     >
@@ -39,30 +39,30 @@ function TwoBlocksSection({
         <>
           <Image
             src={imgSrc}
-            alt=""
+            alt="image description"
             width={imgWidth}
             height={imgHeight}
-            className="w-full lg:w-auto"
+            className="col-span-12 lg:col-span-6 lg:w-auto"
           />
 
-          <div style={{width: paragraphWidth}} className="paragraph flex flex-col gap-6 items-start">
+          <div style={{width: paragraphWidth}} className="col-span-12 lg:col-span-6 paragraph flex flex-col gap-6 items-start">
             <Tags
               text={tagText}
               className={tagClass}
             />
-            <h1 className="font-bold text-5xl leading-15">{title}</h1>
+            <div className="font-bold text-5xl leading-15">{title}</div>
             <div className="text-lg">{description}</div>
             {description2 && <div className="text-lg">{description2}</div>}
           </div>
         </>
       ) : (
         <>
-          <div style={{width: paragraphWidth}} className="paragraph flex flex-col gap-6 items-start">
+          <div style={{width: paragraphWidth}} className="col-span-12 lg:col-span-6 paragraph flex flex-col gap-6 items-start">
             <Tags
               text={tagText}
               className={tagClass}
             />
-            <h1 className="font-bold text-5xl">{title}</h1>
+            <div className="font-bold text-5xl">{title}</div>
             <div className="text-lg">{description}</div>
             {description2 && <div className="text-lg">{description2}</div>}
           </div>
@@ -71,7 +71,7 @@ function TwoBlocksSection({
             alt=""
             width={imgWidth}
             height={imgHeight}
-             className="w-full lg:w-auto"
+             className="col-span-12 lg:col-span-6 w-full lg:w-auto"
           />
         </>
       )}

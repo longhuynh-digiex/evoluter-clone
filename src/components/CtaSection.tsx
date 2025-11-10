@@ -8,9 +8,9 @@ function CtaSection() {
     <div className="container-lg mt-[200px]">
       <div className="bg-orange w-full rounded-4xl py-15">
         <div className="flex-center flex-col gap-6 text-center text-primary">
-          <h1 className="font-bold text-5xl leading-[60px]">
+          <div className="font-bold text-5xl leading-[60px]">
             Hire developers, designers and <br /> product managers
-          </h1>
+          </div>
           <div className="text-lg">
             Tell us the skills you need and we’ll connect you with your next
             superstar!
@@ -29,7 +29,7 @@ function CtaSection() {
         <div className="relative w-full h-[416px]">
           <Image
             src={"/people-CTA.png"}
-            alt=""
+            alt="cta people"
             objectFit="contain"
             fill
           />

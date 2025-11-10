@@ -1,16 +1,16 @@
-import { ArrowDown, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+
 
 function PhoneNumberInput() {
   return (
-    <div className="flex bg-background-gray rounded-lg h-full">
+    <div className="flex bg-background-gray rounded-lg">
       <div className="flex gap-2.5 py-3 px-4 border-r border-[#575757] h-full">
         <Image
           src="/UA.svg"
           width={24}
           height={24}
-          alt=""
+          alt="flag"
         />
         <ChevronDown />
       </div>
