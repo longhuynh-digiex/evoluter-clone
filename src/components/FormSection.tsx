@@ -21,11 +21,11 @@ const FormLabel = ({
 function FormSection() {
   return (
     <div className="container-lg w-full mt-20">
-      <div className="border-2 border-background-gray rounded-4xl w-full p-[90px]">
+      <div className="border-2 border-background-gray rounded-4xl w-full p-4 lg:p-[90px]">
         <div className="font-bold text-4xl">Let us know what you need!</div>
         <div className="mt-15">
-          <form className="grid grid-cols-12 gap-[30px]">
-            <div className="col-span-5 flex flex-col gap-8">
+          <form className="grid grid-cols-12 lg:gap-[30px]">
+            <div className="col-span-12 lg:col-span-5 flex flex-col gap-8">
               <div className="">
                 <FormLabel
                   htmlFor="size"
@@ -53,7 +53,7 @@ function FormSection() {
                 </div>
               </div>
             </div>
-            <div className="col-start-7 col-span-5 flex flex-col gap-8">
+            <div className="col-span-12 lg:col-start-7 lg:col-span-5 flex flex-col gap-8">
               <div>
                 <label htmlFor="name" className="mb-3 block">Name</label>
                 <CustomInput id="name"  placeholder="Enter your name" />
