@@ -8,9 +8,9 @@ function HeroSection() {
   return (
     <section className="container-sm grid grid-cols-12 mt-[116px]">
       <div className="col-span-12 lg:col-span-7 flex flex-col items-start">
-        <h1 className="text-6xl font-bold leading-[72px]">
+        <div className="text-6xl font-bold leading-[72px]">
           Evoluter Hire Expert Software Developers Supported by AI
-        </h1>
+        </div>
         <div className="mt-6">
           At Evoluter, we offer the world's leading companies and startups
           access to top-tier software developers or fully managed teams,
