@@ -41,7 +41,7 @@ function PricingPlanCard({
         </div>
       )}
       <div className="flex flex-col gap-8">
-        <h1 className="text-[28px] font-bold leading-9">{title}</h1>
+        <div className="text-[28px] font-bold leading-9">{title}</div>
         <div className="w-full h-0.5 bg-background-gray"></div>
         <h2 className="text-4xl font-bold">{price}</h2>
         <div className="flex flex-col gap-4">
