@@ -27,6 +27,7 @@ export const PRICING_PLAN = [
         ],
         bgColor: COLORS.primary,
         textColor: COLORS.secondary,
+        isMostPopular: true
     },
     {
         title: "Unicorn Incoming",

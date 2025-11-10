@@ -8,9 +8,9 @@ import Button from "./Button";
 function HireExpertsSection() {
   return (
     <div className="container-lg mt-36">
-      <div className="flex flex-col gap-15 h-full bg-secondary rounded-4xl p-24">
+      <div className="flex flex-col gap-15 h-full bg-secondary rounded-4xl p-[90px]">
         <div className="flex justify-between">
-          <div className="flex flex-col gap-6 w-[788px]">
+          <div className="flex flex-col gap-6 min-w-[788px]">
             <h2 className="font-bold text-5xl text-primary">
               Better quality, better pricing.
               <br /> Scale with Evoluter
@@ -42,7 +42,7 @@ function HireExpertsSection() {
           </div>
         </div>
 
-        <div className="flex justify-between items-center gap-[30px] h-[456px]">
+        <div className="flex justify-between items-center gap-[30px] min-h-[456px]">
           {EXPERTS_CARD_ITEMS.map((expert, index) => (
             <ExpertCard
               key={index}

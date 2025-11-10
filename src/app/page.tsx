@@ -1,17 +1,24 @@
+import ClientSection from "@/components/ClientSection";
+import CostAndQualitySection from "@/components/CostAndQualitySection";
+import CtaSection from "@/components/CtaSection";
+import FaqSection from "@/components/FaqSection";
+import Footer from "@/components/Footer";
+import FormSection from "@/components/FormSection";
 import HeroSection from "@/components/HeroSection";
 import HireExpertsSection from "@/components/HireExpertsSection";
 import HiringStepsSection from "@/components/HiringStepsSection";
-import Navbar from "@/components/Navbar";
+
 import PlatformSection from "@/components/PlatformSection";
 import PricingSection from "@/components/PricingSection";
+import TalentSection from "@/components/TalentSection";
+import TestimonialSection from "@/components/TestimonialSection";
 import TrustedSection from "@/components/TrustedSection";
 import WhyUseSection from "@/components/WhyUseSection";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-raleway bg-primary">
-      <Navbar />
+    <div className="min-h-screen max-w-[1440px] font-raleway bg-primary">
       <HeroSection />
       <TrustedSection />
       <HireExpertsSection />
@@ -19,6 +26,13 @@ export default function Home() {
       <WhyUseSection />
       <HiringStepsSection />
       <PricingSection />
+      <FormSection/>
+      <ClientSection />
+      <TalentSection/>
+      <CostAndQualitySection/>
+      <TestimonialSection/>
+      <FaqSection/>
+      <CtaSection/>
     </div>
   );
 }

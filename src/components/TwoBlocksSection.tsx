@@ -11,6 +11,9 @@ type TTwoBlocksSection = {
   imgSrc: string;
   isImageFirst?: boolean;
   className?: string;
+  imgWidth?: number;
+  imgHeight?: number;
+  paragraphWidth?: number
 };
 function TwoBlocksSection({
   tagText,
@@ -20,7 +23,10 @@ function TwoBlocksSection({
   description2,
   className,
   imgSrc,
+  imgWidth = 499,
+  imgHeight = 387.0026550292969,
   isImageFirst,
+  paragraphWidth = 555 
 }: TTwoBlocksSection) {
   return (
     <div
@@ -34,23 +40,23 @@ function TwoBlocksSection({
           <Image
             src={imgSrc}
             alt=""
-            width={499}
-            height={387.0026550292969}
+            width={imgWidth}
+            height={imgHeight}
           />
 
-          <div className="flex flex-col gap-6 items-start w-[555px]">
+          <div style={{width: paragraphWidth}} className="flex flex-col gap-6 items-start">
             <Tags
               text={tagText}
               className={tagClass}
             />
-            <h1 className="font-bold text-5xl">{title}</h1>
+            <h1 className="font-bold text-5xl leading-15">{title}</h1>
             <div className="text-lg">{description}</div>
             {description2 && <div className="text-lg">{description2}</div>}
           </div>
         </>
       ) : (
         <>
-          <div className="flex flex-col gap-6 items-start w-[555px]">
+          <div style={{width: paragraphWidth}} className="flex flex-col gap-6 items-start">
             <Tags
               text={tagText}
               className={tagClass}
@@ -62,8 +68,8 @@ function TwoBlocksSection({
           <Image
             src={imgSrc}
             alt=""
-            width={499}
-            height={387.0026550292969}
+            width={imgWidth}
+            height={imgHeight}
           />
         </>
       )}

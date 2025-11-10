@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <section className="container-sm flex items-center w-full h-auto px-[150px] mt-12 *:basis-1/2">
+    <section className="container-sm flex items-center w-full h-auto px-[150px] *:basis-1/2 mt-[116px]">
       <div className="flex flex-col items-start">
         <h2 className="text-6xl font-bold leading-[72px]">
           Hire Expert Software <br /> Developers <br />

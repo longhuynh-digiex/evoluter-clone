@@ -26,7 +26,7 @@ export const WHY_US_ITEMS = [
     description: (
       <div>
         of your teams time saved{" "}
-        <span className="font-bold">per candidate</span>, We can even start on
+        <span className="font-bold">per candidate</span> on
         interviewing
       </div>
     ),

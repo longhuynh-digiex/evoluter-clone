@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Raleway, Open_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -23,7 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${raleway.className} antialiased`}>{children}</body>
+      <body className={`${raleway.className} antialiased`}>
+        <Navbar />
+        <div className="w-full flex-center">{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }

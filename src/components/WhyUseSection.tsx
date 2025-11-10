@@ -10,11 +10,11 @@ function WhyUseSection() {
         <h1 className="font-bold text-6xl leading-16">
           Why are companies and founders <br /> using Evoluter?{" "}
         </h1>
-        <div className="absolute right-20 -top-3">
-          <Image src={'./boom.svg'} alt="" width={50} height={54}/>
+        <div className="absolute right-10 -top-3 animate-ping">
+          <Image src={'./boom.svg'} alt="" width={40} height={40}/>
         </div>
       </div>
-      <div className="flex justify-between gap-7 mt-15 *:basis-[380px] flex-wrap">
+      <div className="flex justify-between gap-[30px] mt-15 *:basis-[380px]">
         {WHY_US_ITEMS.map((items,index) => (
           <StatisticCard
             key={index}

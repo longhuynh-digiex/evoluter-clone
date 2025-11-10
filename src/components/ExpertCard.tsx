@@ -37,7 +37,7 @@ function ExpertCard({
         height={180}
       />
       <div
-        className="flex flex-col justify-start items-center text-center min-h-36"
+        className="flex flex-col justify-start items-center text-center h-auto min-h-36"
       >
         <h4 className={`font-bold text-[28px] mb-2`}>{title}</h4>
         <div className={`text-center`}>{description}</div>
