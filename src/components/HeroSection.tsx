@@ -9,8 +9,7 @@ function HeroSection() {
     <section className="container-sm grid grid-cols-12 mt-[116px]">
       <div className="col-span-12 lg:col-span-7 flex flex-col items-start">
         <h1 className="text-6xl font-bold leading-[72px]">
-          Hire Expert Software Developers
-          Supported by AI
+          Hire Expert Software Developers Supported by AI
         </h1>
         <div className="mt-6">
           At Evoluter, we offer the world's leading companies and startups
@@ -44,7 +43,6 @@ function HeroSection() {
         />
       </div>
     </section>
-
   );
 }
 

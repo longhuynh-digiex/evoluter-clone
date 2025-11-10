@@ -14,7 +14,6 @@ import TrustedSection from "@/components/TrustedSection";
 import WhyUseSection from "@/components/WhyUseSection";
 
 export default function Home() {
-
   return (
     <div className="w-full max-w-[1440px] font-raleway bg-primary">
       <HeroSection />
@@ -31,6 +30,9 @@ export default function Home() {
       <TestimonialSection />
       <FaqSection />
       <CtaSection />
+      <span className="opacity-0">
+        Hire Expert Software Developers Supported by AI
+      </span>
     </div>
   );
 }
